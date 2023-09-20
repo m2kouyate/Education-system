@@ -1,0 +1,9 @@
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    Username: <input type="text" name="username"><br>
+    Password: <input type="password" name="password1"><br>
+    Confirm Password: <input type="password" name="password2"><br>
+    <button type="submit">Register</button>
+  </form>
+{% endblock %}
